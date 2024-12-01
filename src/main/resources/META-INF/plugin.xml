@@ -17,6 +17,11 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
+        <toolWindow factoryClass="com.github.iamjuaness.blackholetheme.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <themeProvider id="com.github.iamjuaness.blackholetheme" path="/theme/black_hole.theme.json" />
     </extensions>
+
+    <applicationListeners>
+        <listener class="com.github.iamjuaness.blackholetheme.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+    </applicationListeners>
 </idea-plugin>
