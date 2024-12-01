@@ -11,9 +11,12 @@
      Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
      Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Black Hole Theme is a sleek and minimalist dark theme for IntelliJ IDEA, designed to reduce eye strain during long coding sessions. Inspired by the depth and mystery of black holes, it features a carefully curated color palette that blends dark tones with soft, contrasting accents. This theme provides an immersive development experience, perfect for programmers looking for a modern, professional, and user-friendly environment.
+    Black Hole Theme is a sleek and minimalist dark theme for IntelliJ IDEA, designed to reduce eye
+    strain during long coding sessions. Inspired by the depth and mystery of black holes, it
+    features a carefully curated color palette that blends dark tones with soft, contrasting
+    accents. This theme provides an immersive development experience, perfect for programmers
+    looking for a modern, professional, and user-friendly environment.
   ]]></description>
-
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
