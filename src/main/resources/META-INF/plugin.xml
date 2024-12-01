@@ -2,17 +2,21 @@
 <idea-plugin>
     <id>com.github.iamjuaness.blackholetheme</id>
     <name>Black-Hole-Theme</name>
-    <vendor>iamjuaness</vendor>
+    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <vendor email="cardonajuanes94@gmail.com" url="https://juanesdev.netlify.app/">iamjuaness</vendor>
 
     <depends>com.intellij.modules.platform</depends>
+
+    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
+     Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
+     Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
+    <description><![CDATA[
+    Black Hole Theme is a sleek and minimalist dark theme for IntelliJ IDEA, designed to reduce eye strain during long coding sessions. Inspired by the depth and mystery of black holes, it features a carefully curated color palette that blends dark tones with soft, contrasting accents. This theme provides an immersive development experience, perfect for programmers looking for a modern, professional, and user-friendly environment.
+  ]]></description>
 
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.iamjuaness.blackholetheme.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <themeProvider id="com.github.iamjuaness.blackholetheme" path="/theme/black_hole.theme.json" />
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.iamjuaness.blackholetheme.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
 </idea-plugin>

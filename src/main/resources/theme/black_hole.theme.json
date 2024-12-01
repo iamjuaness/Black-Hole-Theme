@@ -1,0 +1,93 @@
+{
+  "name": "Black Hole Theme",
+  "dark": true,
+  "author": "iamjuaness",
+  "editorScheme": "/theme/black_hole.xml",
+  "colors": {
+    "very_dark_blue": "#0D1319",
+    "light_grayish_blue": "#C8D6DB",
+    "grayish_blue": "#C6D1D7",
+    "slightly_desaturated_blue": "#6BA4C1",
+    "dark_moderate_blue_1": "#3E5F78",
+    "very_dark_desaturated_blue": "#233A4C",
+    "very_dark_desaturated_blue_2": "#192937",
+    "dark_moderate_blue_2": "#4E83A3",
+    "white": "#FFFFFF",
+    "dark_grayish_red": "#9C8C8E",
+    "dark_grayish_red_2": "#8E716c",
+    "very_dark_grayish_red": "#5B4C4D",
+    "very_dark_grayish_pink": "#373133",
+    "very_dark_grayish_orange": "#695D57",
+    "very_dark_grayish_orange_2": "#403C3A",
+    "mostly_desaturated_dark_red": "#94645C",
+    "very_dark_mostly_black_cyan_lime_green": "#292C2B"
+  },
+  "ui": {
+    "*": {
+      "background": "very_dark_blue",
+      "borderColor": "slightly_desaturated_blue",
+      "Group.separatorColor": "very_dark_desaturated_blue",
+      "disabledBorderColor": "very_dark_desaturated_blue_2",
+      "foreground": "grayish_blue",
+      "hoverBackground": "dark_moderate_blue_1",
+      "infoForeground": "light_grayish_blue",
+      "lightSelectionBackground": "dark_moderate_blue_2",
+      "selectedBackground": "light_grayish_blue",
+      "selectedForeground": "white",
+      "selectionBackground": "dark_moderate_blue_2",
+      "selectionForeground": "white",
+      "separatorColor": "very_dark_desaturated_blue",
+      "Borders.color": "slightly_desaturated_blue"
+    },
+    "Notification.background": "very_dark_grayish_red",
+    "ToolTip.Actions.background": "very_dark_grayish_orange_2",
+    "Panel.background": "very_dark_blue",
+    "Button": {
+      "endBackground": "mostly_desaturated_dark_red",
+      "endBorderColor": "very_dark_grayish_orange",
+      "startBackground": "dark_grayish_red_2",
+      "startBorderColor": "very_dark_grayish_red"
+    },
+    "EditorTabs": {
+      "underlineColor": "very_dark_desaturated_blue"
+    },
+    "ToolWindow": {
+      "Header": {
+        "background": "very_dark_desaturated_blue_2",
+        "inactiveBackground": "very_dark_blue"
+      },
+      "HeaderTab": {
+        "selectedInactiveBackground": "slightly_desaturated_blue",
+        "hoverInactiveBackground": "dark_moderate_blue_1"
+      }
+    },
+    "List": {
+      "background": "very_dark_grayish_pink",
+      "selectionBackground": "very_dark_grayish_orange_2",
+      "selectionForeground": "white",
+      "selectionInactiveBackground": "very_dark_desaturated_blue_2"
+    },
+    "ProgressBar": {
+      "indeterminateStartColor": "slightly_desaturated_blue",
+      "indeterminateEndColor": "dark_moderate_blue_2",
+      "passedColor": "very_dark_desaturated_blue",
+      "failedColor": "very_dark_mostly_black_cyan_lime_green"
+    }
+  },
+  "icons": {
+    "ColorPalette": {
+      "Actions.Blue": "#3E5F78",
+      "Actions.Grey": "#C6D1D7",
+      "Actions.Red": "#94645C",
+      "Objects.Green": "#4E83A3",
+      "Objects.Pink": "#9C8C8E",
+      "Objects.Purple": "#5B4C4D"
+    }
+  },
+  "background": {
+    "anchor": "bottom_left",
+    "fill": "scale",
+    "transparency": 5,
+    "image": "images/background.png"
+  }
+}

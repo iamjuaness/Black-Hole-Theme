@@ -1,0 +1,62 @@
+<scheme name="Black Hole Theme" version="1" parent_scheme="Darcula">
+    <!-- General colors -->
+    <colors>
+        <option name="BACKGROUND" value="#0D1319" /> <!-- very_dark_blue -->
+        <option name="FOREGROUND" value="#C6D1D7" /> <!-- grayish_blue -->
+        <option name="SELECTION_BACKGROUND" value="#4E83A3" /> <!-- dark_moderate_blue_2 -->
+        <option name="SELECTION_FOREGROUND" value="#FFFFFF" /> <!-- white -->
+        <option name="BUTTON_BACKGROUND" value="#94645C" /> <!-- mostly_desaturated_dark_red -->
+        <option name="BUTTON_BORDER" value="#695D57" /> <!-- very_dark_grayish_orange -->
+        <option name="BUTTON_FOREGROUND" value="#FFFFFF" /> <!-- white -->
+        <option name="ERROR_BACKGROUND" value="#292C2B" /> <!-- very_dark_mostly_black_cyan_lime_green -->
+        <option name="ERROR_FOREGROUND" value="#9C8C8E" /> <!-- dark_grayish_red -->
+        <option name="NOTIFICATION_BACKGROUND" value="#5B4C4D" /> <!-- very_dark_grayish_red -->
+        <option name="TOOLTIP_BACKGROUND" value="#403C3A" /> <!-- very_dark_grayish_orange_2 -->
+        <option name="SEPARATOR_COLOR" value="#233A4C" /> <!-- very_dark_desaturated_blue -->
+    </colors>
+
+    <!-- Editor colors -->
+    <editor>
+        <option name="CARET_COLOR" value="#FFFFFF" /> <!-- white -->
+        <option name="LINE_NUMBER_COLOR" value="#C8D6DB" /> <!-- light_grayish_blue -->
+        <option name="CURRENT_LINE_HIGHLIGHT_COLOR" value="#6BA4C1" /> <!-- slightly_desaturated_blue -->
+        <option name="TEXT_COLOR" value="#C6D1D7" /> <!-- grayish_blue -->
+        <option name="BACKGROUND_COLOR" value="#0D1319" /> <!-- very_dark_blue -->
+    </editor>
+
+    <!-- Popup and Tooltip colors -->
+    <popup>
+        <option name="BACKGROUND_COLOR" value="#373133" /> <!-- very_dark_grayish_pink -->
+        <option name="BORDER_COLOR" value="#6BA4C1" /> <!-- slightly_desaturated_blue -->
+        <option name="SEPARATOR_COLOR" value="#233A4C" /> <!-- very_dark_desaturated_blue -->
+    </popup>
+
+    <!-- Panel and tool window colors -->
+    <toolwindow>
+        <option name="BACKGROUND" value="#192937" /> <!-- very_dark_desaturated_blue_2 -->
+        <option name="ACTIVE_TAB_BACKGROUND" value="#4E83A3" /> <!-- dark_moderate_blue_2 -->
+        <option name="INACTIVE_TAB_BACKGROUND" value="#3E5F78" /> <!-- dark_moderate_blue_1 -->
+    </toolwindow>
+
+    <!-- Table row selection colors -->
+    <table>
+        <option name="ROW_SELECTION_BACKGROUND" value="#4E83A3" /> <!-- dark_moderate_blue_2 -->
+        <option name="ROW_SELECTION_FOREGROUND" value="#FFFFFF" /> <!-- white -->
+        <option name="ALTERNATE_ROW_COLOR" value="#192937" /> <!-- very_dark_desaturated_blue_2 -->
+    </table>
+
+    <!-- Link colors -->
+    <links>
+        <option name="ACTIVE_FOREGROUND" value="#6BA4C1" /> <!-- slightly_desaturated_blue -->
+        <option name="HOVER_FOREGROUND" value="#6BA4C1" /> <!-- slightly_desaturated_blue -->
+        <option name="PRESSED_FOREGROUND" value="#6BA4C1" /> <!-- slightly_desaturated_blue -->
+        <option name="VISITED_FOREGROUND" value="#6BA4C1" /> <!-- slightly_desaturated_blue -->
+    </links>
+
+    <!-- Menu and popups -->
+    <menu>
+        <option name="BACKGROUND" value="#373133" /> <!-- very_dark_grayish_pink -->
+        <option name="FOREGROUND" value="#C6D1D7" /> <!-- grayish_blue -->
+        <option name="SEPARATOR_COLOR" value="#233A4C" /> <!-- very_dark_desaturated_blue -->
+    </menu>
+</scheme>
