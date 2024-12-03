@@ -248,4 +248,4 @@ jobs:
 
       - name: Clean cache
         run: |
-          sudo rm -rf ~/.cache/*
+          sudo rm -rf ~/home/runner/.gradle/caches/*
