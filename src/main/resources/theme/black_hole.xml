@@ -1,8 +1,8 @@
-<scheme name="Black Hole Theme" version="1" parent_scheme="Darcula">
+<scheme name="Black Hole Theme" version="2" parent_scheme="Darcula">
     <!-- General colors -->
     <colors>
         <option name="ADDED_LINES_COLOR" value="3E5F78" />
-        <option name="ANNOTATIONS_COLOR" value="233A4C" />
+        <option name="ANNOTATIONS_COLOR" value="9C8C8E" />
         <option name="CARET_COLOR" value="E35278" />
         <option name="CARET_ROW_COLOR" value="192937" />
         <option name="CONSOLE_BACKGROUND_KEY" value="0D1319" />
@@ -89,7 +89,11 @@
     </popup>
     <attributes>
         <option name="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA" />
-        <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA" />
+        <option name="ANNOTATION_NAME_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="3C82AC" />
+            </value>
+        </option>
         <option name="BAD_CHARACTER">
             <value>
                 <option name="FOREGROUND" value="fb4934" />

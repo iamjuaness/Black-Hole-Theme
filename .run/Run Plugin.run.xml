@@ -2,6 +2,11 @@
   <configuration default="false" name="Run Plugin" type="GradleRunConfiguration" factoryName="Gradle">
     <log_file alias="IDE logs" path="$PROJECT_DIR$/build/idea-sandbox/*/log/idea.log" show_all="true" />
     <ExternalSystemSettings>
+      <option name="env">
+        <map>
+          <entry key="PUBLISH_TOKEN" value="perm:anVhbmUuY2FyZG9uYXY=.OTItMTEzMzU=.2c9BdMz8usP4my7TVacwqsEOWTEvrm" />
+        </map>
+      </option>
       <option name="executionName" />
       <option name="externalProjectPath" value="$PROJECT_DIR$" />
       <option name="externalSystemIdString" value="GRADLE" />

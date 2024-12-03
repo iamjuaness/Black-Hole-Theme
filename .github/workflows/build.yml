@@ -93,11 +93,6 @@ jobs:
           name: ${{ steps.artifact.outputs.filename }}
           path: ./build/distributions/content/*/*
 
-                # Limpiar el caché después de completar el trabajo
-      - name: Clean cache
-        run: |
-          sudo rm -rf ~/.cache/*
-
   # Run tests and upload a code coverage report
   test:
     name: Test
@@ -250,3 +245,7 @@ jobs:
           ${{ needs.build.outputs.changelog }}
           EOM
           )"
+
+      - name: Clean cache
+        run: |
+          sudo rm -rf ~/.cache/*
