@@ -6,6 +6,11 @@ name: Release
 on:
   release:
     types: [prereleased, released]
+  workflow_run:
+    workflows:
+      - Build
+    types:
+      - completed
 
 jobs:
 
