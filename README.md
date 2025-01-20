@@ -4,10 +4,37 @@
 [![Version](https://img.shields.io/jetbrains/plugin/v/25984-black-hole-theme.svg)](https://plugins.jetbrains.com/plugin/25984-black-hole-theme)
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/25984-black-hole-theme.svg)](https://plugins.jetbrains.com/plugin/25984-black-hole-theme)
 
-## Template ToDo list
-- [ ] Set the [Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html?from=IJPluginTemplate) related [secrets](https://github.com/JetBrains/intellij-platform-plugin-template#environment-variables).
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html?from=IJPluginTemplate).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+<h3 align="left">
+  🚧 Project under development 🚧
+</h3>
+
+<h1 align="center">
+  <🎨> Black Hole Theme
+</h1>
+<p align="center">
+    <sub>A modern, good-looking, productivity-increaser theme for all JetBrains IDEs<br>AppCode · CLion · DataGrip · GoLand · Intellij IDEA · PhpStorm · PyCharm · Rider · RubyMine · WebStorm</sub>
+</p>
+<p align="center">
+  <a href="https://plugins.jetbrains.com/plugin/25984-black-hole-theme">JetBrains Plugin</a>
+  ·
+  <a href="https://github.com/iamjuaness/Black-Hole-Theme/issues">Report Bug</a>
+  ·
+  <a href="https://github.com/iamjuaness/Black-Hole-Theme/issues">Request Feature</a>
+</p>
+
+## 🧱 Build the Theme
+
+1. Run the command `./gradlew buildPlugin` in the root of the project
+2. You'll have the theme located in `./build/distributions`
+
+## 🚀 Release
+
+To release a new version of the theme, simple [create a new GitHub release](https://github.com/iamjuaness/Black-Hole-Theme/releases/new)
+
+## 📄 Where to find an specific key to modify
+
+* https://jetbrains.design/intellij/principles/platform_theme_colors/#UI-components
+
 
 ## Description of the theme
 <!-- Plugin description -->

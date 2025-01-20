@@ -1,4 +1,4 @@
-<scheme name="Black Hole Theme" version="2" parent_scheme="Darcula">
+<scheme name="Black Hole Theme" version="1.1.1" parent_scheme="Darcula">
     <!-- General colors -->
     <colors>
         <option name="ADDED_LINES_COLOR" value="3E5F78" />
@@ -17,20 +17,12 @@
         <option name="DIAGRAM_NOTE_BORDER" value="233A4C" />
         <option name="DIAGRAM_REALIZATION_EDGE" value="4E83A3" />
         <option name="DOCUMENTATION_COLOR" value="5B4C4D" />
-        <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="403C3A" />
+        <option name="FILESTATUS_IDEA_FILESTATUS_IGNORED" value="4E83A3" />
         <option name="FILESTATUS_MODIFIED" value="6BA4C1" />
         <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="6BA4C1" />
         <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="6BA4C1" />
         <option name="FILESTATUS_modifiedOutside" value="6BA4C1" />
         <option name="GUTTER_BACKGROUND" value="192937" />
-        <option name="HTML_TAG_TREE_LEVEL0" value="9C8C8E" />
-        <option name="HTML_TAG_TREE_LEVEL1" value="4E83A3" />
-        <option name="HTML_TAG_TREE_LEVEL2" value="6BA4C1" />
-        <option name="HTML_TAG_TREE_LEVEL3" value="4E83A3" />
-        <option name="HTML_TAG_TREE_LEVEL4" value="6BA4C1" />
-        <option name="HTML_TAG_TREE_LEVEL5" value="4E83A3" />
-        <option name="HTML_TAG_TREE_LEVEL6" value="6BA4C1" />
-        <option name="HTML_TAG_TREE_LEVEL7" value="4E83A3" />
         <option name="INDENT_GUIDE" value="233A4C" />
         <option name="INFORMATION_HINT" value="0D1319" />
         <option name="LINE_NUMBERS_COLOR" value="373133" />
@@ -43,7 +35,7 @@
         <option name="RIGHT_MARGIN_COLOR" value="233A4C" />
         <option name="SELECTED_TEARLINE_COLOR" value="4E83A3" />
         <option name="SELECTION_BACKGROUND" value="9C8C8E" />
-        <!--        <option name="SEPARATOR_ABOVE_COLOR" value="233A4C" />-->
+        <option name="SEPARATOR_ABOVE_COLOR" value="233A4C" />
         <!--        <option name="SEPARATOR_BELOW_COLOR" value="233A4C" />-->
         <option name="SEPARATOR_COLOR" value="#233A4C" /> <!-- very_dark_desaturated_blue -->
         <option name="ScrollBar.Mac.Transparent.hoverThumbBorderColor" value="6BA4C1" />
