@@ -2,6 +2,8 @@
 
 # Black Hole Theme Changelog
 
+## [Unreleased]
+
 ## [1.1.2] - 2025-01-24
 ### Changed
 - Use of the creation of plugins with identifiers
