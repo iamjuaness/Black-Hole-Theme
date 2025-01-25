@@ -20,8 +20,8 @@
     <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.iamjuaness.blackholetheme.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-        <themeProvider id="com.github.iamjuaness.blackholetheme" path="/theme/black_hole.theme.json" />
+        <themeProvider id="5de5de8f-3896-49d6-8b4b-243a95450996" path="/theme/black_hole_dark.theme.json"/>
+        <bundledColorScheme id="Black Hole Dark" path="/theme/black_hole_dark"/>
     </extensions>
 
     <applicationListeners>

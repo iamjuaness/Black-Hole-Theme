@@ -5,11 +5,19 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/25984-black-hole-theme.svg)](https://plugins.jetbrains.com/plugin/25984-black-hole-theme)
 
 <h3 align="left">
-  🚧 Project under development 🚧
+  🚧 Project under development and design 🚧
 </h3>
 
+<h1 align="left">
+  Status
+</h1>
+
+> [!IMPORTANT]
+> Black Hole Theme is early in development and design, don't expect a flawless experience.
+
+
 <h1 align="center">
-  <🎨> Black Hole Theme
+  🎨 Black Hole Theme
 </h1>
 <p align="center">
     <sub>A modern, good-looking, productivity-increaser theme for all JetBrains IDEs<br>AppCode · CLion · DataGrip · GoLand · Intellij IDEA · PhpStorm · PyCharm · Rider · RubyMine · WebStorm</sub>

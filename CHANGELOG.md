@@ -2,10 +2,11 @@
 
 # Black Hole Theme Changelog
 
-## [Unreleased]
-### Fixed
-- Java support will be corrected
-- Improved the color of different sections for a better UX
+## [1.1.2] - 2025-01-24
+### Changed
+- Use of the creation of plugins with identifiers
+- Use com.intellij.bundledColorScheme extension point specifying the path to the color scheme XML file
+- Small corrections in the design of the theme
 
 ## [1.1.1] - 2025-01-19
 ### Changed

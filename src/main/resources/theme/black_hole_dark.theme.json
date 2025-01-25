@@ -1,8 +1,8 @@
 {
-  "name": "Black Hole Theme",
+  "name": "Black Hole Dark",
   "dark": true,
   "author": "iamjuaness",
-  "editorScheme": "/theme/black_hole.xml",
+  "colorsScheme": "/theme/black_hole_dark.xml",
   "colors": {
     "very_dark_blue": "#0D1319",
     "light_grayish_blue": "#C8D6DB",
@@ -15,6 +15,7 @@
     "white": "#FFFFFF",
     "dark_grayish_red": "#9C8C8E",
     "dark_grayish_red_2": "#8E716c",
+    "foreground": "#ebdbb2",
     "very_dark_grayish_red": "#5B4C4D",
     "very_dark_grayish_pink": "#373133",
     "very_dark_grayish_orange": "#695D57",
@@ -60,6 +61,14 @@
     "EditorTabs": {
       "underlineColor": "very_dark_desaturated_blue"
     },
+    "ComboBox": {
+      "nonEditableBackground": "very_dark_blue",
+      "ArrowButton": {
+        "iconColor": "grayish_blue",
+        "disabledIconColor": "grayish_blue",
+        "nonEditableBackground": "very_dark_blue"
+      }
+    },
     "ToolWindow": {
       "Header": {
         "background": "very_dark_desaturated_blue_2",
@@ -84,9 +93,9 @@
       "failedColor": "dark_grayish_red",
       "failedEndColor": "dark_grayish_red_2"
     },
-    "PopupMenu.translucentBackground": true,
+    "PopupMenu.translucentBackground": "true",
     "SettingsTree.rowHeight": "0",
-    "PopupMenuSeparator.stripeWidth": 1,
+    "PopupMenuSeparator.stripeWidth": "1",
     "SearchOption.selectedBackground": "slightly_desaturated_blue",
     "Tree.rowHeight": "0",
     "WelcomeScreen": {
