@@ -26,6 +26,7 @@
   "ui": {
     "*": {
       "background": "very_dark_blue",
+      "TextField.background": "very_dark_blue",
       "borderColor": "slightly_desaturated_blue",
       "Group.separatorColor": "very_dark_desaturated_blue",
       "disabledBorderColor": "very_dark_desaturated_blue_2",
@@ -39,6 +40,9 @@
       "selectionForeground": "white",
       "separatorColor": "very_dark_desaturated_blue",
       "Borders.color": "slightly_desaturated_blue"
+    },
+    "TextField": {
+      "background": "very_dark_blue"
     },
     "CompletionPopup": {
       "selectionBackground": "very_dark_desaturated_blue_2"
@@ -58,8 +62,14 @@
       "startBackground": "dark_grayish_red_2",
       "startBorderColor": "very_dark_grayish_red"
     },
+    "Editor": {
+      "background": "very_dark_blue"
+    },
+    "EditorPane.background": "very_dark_blue",
     "EditorTabs": {
-      "underlineColor": "very_dark_desaturated_blue"
+      "underlinedTabBackground": "very_dark_desaturated_blue_2",
+      "background": "very_dark_blue",
+      "underlineHeight": 3
     },
     "ComboBox": {
       "nonEditableBackground": "very_dark_blue",
@@ -85,14 +95,6 @@
       "selectionForeground": "white",
       "selectionInactiveBackground": "very_dark_desaturated_blue_2"
     },
-    "ProgressBar": {
-      "indeterminateStartColor": "very_dark_blue",
-      "indeterminateEndColor": "very_dark_blue",
-      "passedColor": "very_dark_blue",
-      "passedEndColor": "very_dark_blue",
-      "failedColor": "dark_grayish_red",
-      "failedEndColor": "dark_grayish_red_2"
-    },
     "PopupMenu.translucentBackground": "true",
     "SettingsTree.rowHeight": "0",
     "PopupMenuSeparator.stripeWidth": "1",
@@ -109,32 +111,28 @@
   },
   "icons": {
     "ColorPalette": {
-      "Actions.Blue": "#4E83A3",
-      "Actions.Green": "#3E5F78",
-      "Actions.Grey": "#695D57",
-      "Actions.GreyInline.Dark": "#C6D1D7",
-      "Actions.Red": "#9C8C8E",
-      "Actions.Yellow": "#695D57",
-      "Checkbox.Background.Default.Dark": "#0D1319",
-      "Checkbox.Background.Disabled.Dark": "#0D1319",
-      "Checkbox.Border.Default.Dark": "#C8D6DB",
-      "Checkbox.Border.Disabled.Dark": "#C6D1D7",
-      "Checkbox.Focus.Thin.Default.Dark": "#4E83A3",
-      "Checkbox.Focus.Thin.Selected.Dark": "#4E83A3",
-      "Checkbox.Focus.Wide.Dark": "#4E83A3",
-      "Checkbox.Foreground.Disabled.Dark": "#C6D1D7",
-      "Checkbox.Foreground.Selected.Dark": "#C8D6DB",
-      "Objects.BlackText": "#000000FF",
-      "Objects.Blue": "#3E5F78",
-      "Objects.Green": "#3E5F78",
-      "Objects.GreenAndroid": "dark_moderate_blue_1",
-      "Objects.Grey": "#695D57",
-      "Objects.Pink": "#9C8C8E",
-      "Objects.Purple": "#8E716c",
-      "Objects.Red": "#9C8C8E",
-      "Objects.RedStatus": "#9C8C8E",
-      "Objects.Yellow": "#695D57",
-      "Objects.YellowDark": "#695D57"
+      "Actions.Red": "#c63a5d",
+      "Actions.Yellow": "#caba2d",
+      "Actions.Green": "#25ad6b",
+      "Actions.Blue": "#4d85ff",
+      "Objects.RedStatus": "#dd3962",
+      "Objects.Red": "#c63a5d",
+      "Objects.Pink": "#f98b9e",
+      "Objects.Yellow": "#caba2d",
+      "Objects.Green": "#239e62",
+      "Objects.Blue": "#598bff",
+      "Objects.Purple": "#af71e0",
+      "Objects.BlackText": "#000000ff",
+      "Objects.YellowDark": "#988c26",
+      "Objects.GreenAndroid": "#78c257",
+      "Checkbox.Border.Default": "#121212",
+      "Checkbox.Border.Default.Dark": "#121212",
+      "Checkbox.Background.Default": "#343333",
+      "Checkbox.Background.Default.Dark": "#343333",
+      "Checkbox.Background.Disabled": "#212327",
+      "Checkbox.Background.Disabled.Dark": "#212327",
+      "Checkbox.Focus.Wide": "#2f55b1",
+      "Checkbox.Focus.Wide.Dark": "#2f55b1"
     }
   },
   "background": {

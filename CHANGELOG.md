@@ -3,6 +3,12 @@
 # Black Hole Theme Changelog
 
 ## [Unreleased]
+### Changed
+- The color palette for the languages has been changed. Offering a better contrast.
+
+## [1.2.1] - 2025-01-26
+### Changed
+- The color palette for the languages has been changed. Offering a better contrast.
 
 ## [1.1.2] - 2025-01-24
 ### Changed

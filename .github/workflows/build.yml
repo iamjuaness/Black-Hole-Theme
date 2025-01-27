@@ -245,20 +245,3 @@ jobs:
           ${{ needs.build.outputs.changelog }}
           EOM
           )"
-  # Cleanup caches when a pull request is closed
-  cleanup:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Delete caches
-        run: |
-          echo "Fetching list of cache keys"
-          cacheKeysForPR=$(gh cache list --ref refs/pull/${{ github.event.pull_request.number }}/merge --limit 100 --json id --jq '.[].id')
-
-          echo "Deleting caches..."
-          for cacheKey in $cacheKeysForPR
-          do
-            gh cache delete $cacheKey
-          done
-          echo "Cleanup complete"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
