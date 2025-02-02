@@ -1,0 +1,60 @@
+{
+  "name": "Black Hole Light",
+  "dark": false,
+  "author": "iamjuaness",
+  "editorScheme": "/theme/black_hole_light.xml",
+  "colors": {
+    "white": "#ffffff",
+    "sepiaLight": "#f5f2d5",
+    "foxYellowOrange": "#E49000",
+    "deepYellowOrange": "#E49d41",
+    "lightWood": "#E3CA98",
+    "lighterWood": "#f7deb6",
+    "sepiaOrangeLight": "#ffe8b7",
+    "sepiaOrangeDeep": "#ffb37a",
+    "orangeSalmon": "#F29463",
+    "orangeLight": "#FD9649",
+    "deepOrange": "#F38300",
+    "deepWood": "#783d00",
+    "reddishWood": "#A95424",
+    "midnightBlackVinyl": "#040A19",
+    "vinylBlueGray": "#3A5477",
+    "midnightBlue": "#223255",
+    "neonBlueDark": "#6061FF",
+    "neonBlueLight": "#3581FF",
+    "neonBlueBeff": "#49BEFF",
+    "pinkPurleShirt": "#E0D1E3"
+  },
+  "ui": {
+    "*": {
+      "background": "sepiaOrangeLight",
+      "selectedBackground": "sepiaOrangeDeep",
+      "hoverBackground": "lighterWood",
+      "foreground": "neonBlueLight",
+      "disabledText": "deepYellowOrange",
+      "selectionBackground": "deepOrange",
+      "selectionForeground": "sepiaLight",
+      "underlineColor": "deepYellowOrange",
+      "errorFocusColor": "deepOrange"
+    },
+    "Editor.background": "sepiaOrangeLight",
+    "Button.default.foreground": "sepiaLight",
+    "Borders.color": "deepOrange",
+    "Panel.foreground": "vinylBlueGray",
+    "Panel.foreground.hover": "midnightBlackVinyl",
+    "Panel.hoverForeground": "midnightBlackVinyl",
+    "ScrollPane.background": "sepiaOrangeLight",
+    "ScrollPane.foreground": "midnightBlackVinyl",
+    "TextArea.foreground": "midnightBlackVinyl",
+    "TextField.background": "sepiaOrangeDeep",
+    "TextField.foreground": "midnightBlackVinyl",
+    "TextField.inactiveForeground": "midnightBlackVinyl",
+    "Viewport.foreground": "midnightBlackVinyl"
+  },
+  "background": {
+    "anchor": "bottom_left",
+    "fill": "scale",
+    "transparency": 6,
+    "image": "images/background.png"
+  }
+}

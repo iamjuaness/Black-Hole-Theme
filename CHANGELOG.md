@@ -3,8 +3,12 @@
 # Black Hole Theme Changelog
 
 ## [Unreleased]
-### Changed
-- The color palette for the languages has been changed. Offering a better contrast.
+### Added
+- A light theme has been added for those weirdos who like a light theme.
+
+## [1.3.1] - 2025-02-02
+### Added
+- A light theme has been added for those weirdos who like a light theme.
 
 ## [1.2.1] - 2025-01-26
 ### Changed
