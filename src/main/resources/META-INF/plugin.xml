@@ -3,7 +3,7 @@
     <id>com.github.iamjuaness.blackholetheme</id>
     <name>Black Hole Theme</name>
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="cardonajuanes94@gmail.com" url="https://juanesdev.netlify.app/">iamjuaness</vendor>
+    <vendor email="cardonajuanes94@gmail.com" url="https://github.com/iamjuaness">iamjuaness</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
@@ -20,9 +20,9 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="cc10d611-8006-49a5-960b-70d27a504c84" path="/theme/black_hole_light.theme.json"/>
-        <bundledColorScheme id="Black Hole Light" path="/theme/black_hole_light"/>
+        <additionalTextAttributes scheme="Default" file="/theme/black_hole_light.xml"/>
         <themeProvider id="5de5de8f-3896-49d6-8b4b-243a95450996" path="/theme/black_hole_dark.theme.json"/>
-        <bundledColorScheme id="Black Hole Dark" path="/theme/black_hole_dark"/>
+        <additionalTextAttributes scheme="Darcula" file="/theme/black_hole_dark.xml"/>
     </extensions>
 
     <applicationListeners>

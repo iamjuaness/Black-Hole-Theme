@@ -226,7 +226,9 @@
             </value>
         </option>
         <option name="DEFAULT_LOCAL_VARIABLE">
-            <value />
+            <value>
+                <option name="FOREGROUND" value="A3FACC" />
+            </value>
         </option>
         <option name="DEFAULT_METADATA">
             <value>
@@ -239,7 +241,9 @@
             </value>
         </option>
         <option name="DEFAULT_PARAMETER">
-            <value />
+            <value>
+                <option name="FOREGROUND" value="C2F38C" />
+            </value>
         </option>
         <option name="DEFAULT_PREDEFINED_SYMBOL">
             <value>
@@ -271,7 +275,7 @@
         </option>
         <option name="DEFAULT_STRING">
             <value>
-                <option name="FOREGROUND" value="C5B9B9" />
+                <option name="FOREGROUND" value="A1BDCC" />
             </value>
         </option>
         <option name="DEFAULT_TAG">

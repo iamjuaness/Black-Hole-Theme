@@ -47,7 +47,7 @@
     "CompletionPopup": {
       "selectionBackground": "very_dark_desaturated_blue_2"
     },
-    "Notification.background": "very_dark_grayish_red",
+    "Notification.background": "very_dark_blue",
     "ToolTip.Actions.background": "very_dark_grayish_orange_2",
     "Notification.ToolWindow.informativeBackground": "dark_moderate_blue_1",
     "ParameterInfo.background": "dark_moderate_blue_1",
@@ -55,12 +55,6 @@
     "ActionButton": {
       "hoverBackground": "very_dark_grayish_pink",
       "pressedBackground": "very_dark_grayish_orange_2"
-    },
-    "Button": {
-      "endBackground": "mostly_desaturated_dark_red",
-      "endBorderColor": "very_dark_grayish_orange",
-      "startBackground": "dark_grayish_red_2",
-      "startBorderColor": "very_dark_grayish_red"
     },
     "Editor": {
       "background": "very_dark_blue"

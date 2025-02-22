@@ -3,8 +3,16 @@
 # Black Hole Theme Changelog
 
 ## [Unreleased]
-### Added
-- A light theme has been added for those weirdos who like a light theme.
+### Fixed
+- Fix some color of the dark theme
+### Changed
+- Change the light theme to the new color palette
+
+## [1.3.2] - 2025-02-22
+### Fixed
+- Fix some color of the dark theme
+### Changed
+- Change the light theme to the new color palette
 
 ## [1.3.1] - 2025-02-02
 ### Added
