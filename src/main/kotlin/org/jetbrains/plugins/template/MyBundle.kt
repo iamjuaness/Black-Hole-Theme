@@ -1,4 +1,4 @@
-package com.github.iamjuaness.blackholetheme
+package org.jetbrains.plugins.template
 
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.NonNls
