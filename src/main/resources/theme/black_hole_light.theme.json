@@ -3,6 +3,11 @@
   "dark": false,
   "author": "iamjuaness",
   "editorScheme": "/theme/black_hole_light.xml",
+  "colors": {
+    "componentBorder": "#3E5F78",
+    "panel": "#FFFFFF",
+    "link": "#2675BF"
+  },
   "ui": {
     "*": {
       "background": "#e8e8e8",
@@ -10,7 +15,7 @@
       "selectionBackgroundInactive": "#D5D5D5",
       "disabledForeground": "#8C8C8C",
       "disabledText": "#8C8C8C",
-      "borderColor": "#3E5F78",
+      "borderColor": "componentBorder",
       "inactiveForeground": "#8C8C8C",
       "inactiveBackground": "#e8e8e8",
       "infoForeground": "#808080",
@@ -20,8 +25,8 @@
       "separatorForeground": "#999999"
     },
     "Borders": {
-      "color": "#3E5F78",
-      "ContrastBorderColor": "#3E5F78"
+      "color": "componentBorder",
+      "ContrastBorderColor": "componentBorder"
     },
     "Button": {
       "shadowColor": "#A6A6A620",
@@ -35,7 +40,8 @@
         "endBorderColor": "#346DAD",
         "shadowColor": "#A6A6A650",
         "focusedBorderColor": "#A9C9F5"
-      }
+      },
+      "arc": 0
     },
     "ComboBox": {
       "background": "#FFFFFF",
@@ -70,14 +76,14 @@
       "secondaryForeground": "#77a8d9"
     },
     "Notification": {
-      "borderColor": "border"
+      "borderColor": "componentBorder"
     },
-    "Menu.borderColor": "lightBorder",
+    "Menu.borderColor": "#d1d1d1",
     "PasswordField.background": "white",
     "Popup": {
-      "separatorColor": "lightBorder",
-      "Advertiser.borderColor": "border",
-      "borderColor": "windowsPopupBorder"
+      "separatorColor": "#d1d1d1",
+      "Advertiser.borderColor": "componentBorder",
+      "borderColor": "#A4A4A4"
     },
     "ProgressBar": {
       "trackColor": "#D1D1D1",
@@ -86,27 +92,26 @@
       "indeterminateEndColor": "#1E82E6"
     },
     "ToolWindow.Header.background": "#D1D1D1",
-    "StatusBar.borderColor": "border",
+    "StatusBar.borderColor": "componentBorder",
     "Tree.rowHeight": 20,
+    "ToolBar.background": "#A4A4A4",
     "ToolWindow": {
+      "background": "#A4A4A4",
       "HeaderTab": {
-        "hoverBackground": "#D5D5D5",
-        "selectedInactiveBackground": "#D5D5D5",
-        "hoverInactiveBackground": "#D5D5D5"
+        "hoverBackground": "#8F8C8C",
+        "selectedInactiveBackground": "#8F8C8C",
+        "hoverInactiveBackground": "#8F8C8C"
       },
       "Button": {
-        "selectedBackground": "#D5D5D5",
-        "hoverBackground": "#D5D5D5"
+        "selectedBackground": "#8F8C8C",
+        "hoverBackground": "#8F8C8C"
       }
     },
-    "MainWindow.Tab" : {
+    "MainWindow.Tab": {
       "selectedBackground": "#FFFFFF",
       "selectedInactiveBackground": "#FFFFFF",
       "background": "#E8E8E8",
       "hoverBackground": "#FFFFFF"
-    },
-    "Button": {
-      "arc": 0
     },
     "Component": {
       "arc": 0
@@ -154,7 +159,7 @@
   "background": {
     "anchor": "bottom_left",
     "fill": "scale",
-    "transparency": 9,
+    "transparency": 10,
     "image": "images/background.png"
   }
 }

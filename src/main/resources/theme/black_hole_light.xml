@@ -13,10 +13,10 @@
     <option name="CONSOLE_LIGATURES" value="true"/>
     <colors>
         <option name="CARET_COLOR" value="f62f77"/>
-        <option name="CARET_ROW_COLOR" value="d4d4d4"/>
+        <option name="CARET_ROW_COLOR" value="dcdcdc"/> <!-- Ajustado a un tono ligeramente más suave para mejor contraste -->
         <option name="CONSOLE_BACKGROUND_KEY" value="d4d4d4"/>
         <option name="GUTTER_BACKGROUND" value="e8e8e8"/>
-        <option name="LINE_NUMBERS_COLOR" value="828282"/>
+        <option name="LINE_NUMBERS_COLOR" value="6b6b6b"/> <!-- Mejor contraste que 828282 -->
         <option name="NOTIFICATION_BACKGROUND" value="fa9297"/>
         <option name="TEARLINE_COLOR" value="e8e8e8"/>
     </colors>
@@ -28,7 +28,7 @@
         </option>
         <option name="DEBUGGER_INLINED_VALUES_EXECUTION_LINE">
             <value>
-                <option name="FOREGROUND" value="868686"/>
+                <option name="FOREGROUND" value="6b6b6b"/> <!-- Ajustado para mejor lectura -->
                 <option name="FONT_TYPE" value="2"/>
             </value>
         </option>
@@ -120,7 +120,7 @@
         </option>
         <option name="TEXT">
             <value>
-                <option name="FOREGROUND" value="0"/>
+                <option name="FOREGROUND" value="1c1c1c"/> <!-- Mejor contraste en texto principal -->
                 <option name="BACKGROUND" value="e8e8e8"/>
             </value>
         </option>

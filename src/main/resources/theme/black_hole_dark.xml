@@ -9,14 +9,14 @@
         <option name="FILESTATUS_MODIFIED" value="6BA4C1" />
         <option name="GUTTER_BACKGROUND" value="192937" />
         <option name="INDENT_GUIDE" value="233A4C" />
-        <option name="LINE_NUMBERS_COLOR" value="373133" />
+        <option name="LINE_NUMBERS_COLOR" value="233A4C" />
         <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="869ef3" />
         <option name="MODIFIED_LINES_COLOR" value="4E83A3" />
         <option name="NOTIFICATION_BACKGROUND" value="6BA4C1" />
         <option name="RIGHT_MARGIN_COLOR" value="233A4C" />
         <option name="SELECTION_BACKGROUND" value="233A4C" />
         <option name="SELECTION_FOREGROUND" value="0D1319" />
-        <option name="SEPARATOR_COLOR" value="#233A4C" /> <!-- very_dark_desaturated_blue -->
+        <option name="SEPARATOR_COLOR" value="233A4C" />
         <option name="TEARLINE_COLOR" value="233A4C" />
         <option name="TOOLTIP" value="0D1319" />
         <option name="VISUAL_INDENT_GUIDE" value="233A4C" />
@@ -25,7 +25,7 @@
         <option name="SELECTED_INDENT_GUIDE" value="233A4C" />
     </colors>
     <popup>
-        <option name="BACKGROUND_COLOR" value="#373133" />
+        <option name="BACKGROUND_COLOR" value="#233A4C" />
         <option name="BORDER_COLOR" value="#6BA4C1" />
         <option name="SEPARATOR_COLOR" value="#233A4C" />
     </popup>
@@ -527,6 +527,13 @@
         <option name="PHP_THIS_VAR">
             <value>
                 <option name="FOREGROUND" value="fd8f3f" />
+            </value>
+        </option>
+        <option name="IGNORED_FILE_ATTRIBUTES">
+            <value>
+                <option name="FOREGROUND" value="C6D1D7" /> <!-- color de texto -->
+                <option name="BACKGROUND" value="0D1319" /> <!-- tu fondo oscuro -->
+                <option name="EFFECT_TYPE" value="0" />
             </value>
         </option>
         <option name="PROPERTIES.KEY" baseAttributes="DEFAULT_KEYWORD" />

@@ -2,7 +2,7 @@
   "name": "Black Hole Dark",
   "dark": true,
   "author": "iamjuaness",
-  "colorsScheme": "/theme/black_hole_dark.xml",
+  "editorScheme": "/theme/black_hole_dark.xml",
   "colors": {
     "very_dark_blue": "#0D1319",
     "light_grayish_blue": "#C8D6DB",
@@ -17,7 +17,6 @@
     "dark_grayish_red_2": "#8E716c",
     "foreground": "#ebdbb2",
     "very_dark_grayish_red": "#5B4C4D",
-    "very_dark_grayish_pink": "#373133",
     "very_dark_grayish_orange": "#695D57",
     "very_dark_grayish_orange_2": "#403C3A",
     "mostly_desaturated_dark_red": "#94645C",
@@ -28,7 +27,9 @@
       "background": "very_dark_blue",
       "TextField.background": "very_dark_blue",
       "borderColor": "slightly_desaturated_blue",
+      "Borders.color": "slightly_desaturated_blue",
       "Group.separatorColor": "very_dark_desaturated_blue",
+      "separatorColor": "very_dark_desaturated_blue",
       "disabledBorderColor": "very_dark_desaturated_blue_2",
       "foreground": "grayish_blue",
       "hoverBackground": "dark_moderate_blue_1",
@@ -37,9 +38,7 @@
       "selectedBackground": "light_grayish_blue",
       "selectedForeground": "white",
       "selectionBackground": "dark_moderate_blue_2",
-      "selectionForeground": "white",
-      "separatorColor": "very_dark_desaturated_blue",
-      "Borders.color": "slightly_desaturated_blue"
+      "selectionForeground": "white"
     },
     "TextField": {
       "background": "very_dark_blue"
@@ -53,11 +52,12 @@
     "ParameterInfo.background": "dark_moderate_blue_1",
     "Panel.background": "very_dark_blue",
     "ActionButton": {
-      "hoverBackground": "very_dark_grayish_pink",
+      "hoverBackground": "very_dark_desaturated_blue",
       "pressedBackground": "very_dark_grayish_orange_2"
     },
     "Editor": {
-      "background": "very_dark_blue"
+      "background": "very_dark_blue",
+      "foreground": "foreground"
     },
     "EditorPane.background": "very_dark_blue",
     "EditorTabs": {
@@ -81,10 +81,13 @@
       "HeaderTab": {
         "selectedInactiveBackground": "slightly_desaturated_blue",
         "hoverInactiveBackground": "dark_moderate_blue_1"
+      },
+      "Button": {
+        "hoverBackground": "very_dark_desaturated_blue"
       }
     },
     "List": {
-      "background": "very_dark_grayish_pink",
+      "background": "very_dark_desaturated_blue",
       "selectionBackground": "very_dark_grayish_orange_2",
       "selectionForeground": "white",
       "selectionInactiveBackground": "very_dark_desaturated_blue_2"
