@@ -1,69 +1,91 @@
-# GitHub Actions Workflow created for handling the release process based on the draft release prepared with the Build workflow.
-# Running the publishPlugin task requires all following secrets to be provided: PUBLISH_TOKEN, PRIVATE_KEY, PRIVATE_KEY_PASSWORD, CERTIFICATE_CHAIN.
-# See https://plugins.jetbrains.com/docs/intellij/plugin-signing.html for more information.
+# GitHub Actions Workflow for automatic release after Build completes
+# This workflow creates and publishes a release automatically when Build succeeds on main branch
 
 name: Release
 on:
-  release:
-    types: [prereleased, released]
   workflow_run:
-    workflows:
-      - Build
+    workflows: ["Build"]
     types:
       - completed
+    branches:
+      - main
 
 jobs:
+  # Check if the workflow run was successful and not a PR
+  check:
+    name: Check Build Status
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event != 'pull_request' }}
+    outputs:
+      should_release: ${{ steps.check.outputs.should_release }}
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - name: Fetch Sources
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
 
-  # Prepare and publish the plugin to JetBrains Marketplace repository
-  release:
-    name: Publish Plugin
+      - name: Check if release draft exists
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=$(grep "^pluginVersion" gradle.properties | cut -d'=' -f2 | tr -d ' ')
+          echo "Checking for draft release v$VERSION"
+          
+          DRAFT_EXISTS=$(gh api repos/{owner}/{repo}/releases --jq ".[] | select(.draft == true and .tag_name == \\"v$VERSION\\") | .id")
+          
+          if [ -n "$DRAFT_EXISTS" ]; then
+            echo "should_release=true" >> $GITHUB_OUTPUT
+            echo "Draft release found, will publish"
+          else
+            echo "should_release=false" >> $GITHUB_OUTPUT
+            echo "No draft release found, skipping"
+          fi
+
+      - name: Get Version
+        id: version
+        run: |
+          VERSION=$(grep "^pluginVersion" gradle.properties | cut -d'=' -f2 | tr -d ' ')
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+  # Publish the draft release created by Build workflow
+  publish:
+    name: Publish Release
+    needs: check
+    if: ${{ needs.check.outputs.should_release == 'true' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
     steps:
-
-      # Check out the current repository
       - name: Fetch Sources
         uses: actions/checkout@v5
         with:
-          ref: ${{ github.event.release.tag_name }}
+          ref: ${{ github.event.workflow_run.head_branch }}
 
-      # Set up Java environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v5
         with:
           distribution: zulu
           java-version: 17
 
-      # Setup Gradle
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
 
-      # Set environment variables
-      - name: Export Properties
-        id: properties
-        shell: bash
+      - name: Get Release Notes
+        id: notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          CHANGELOG="$(cat << 'EOM' | sed -e 's/^[[:space:]]*$//g' -e '/./,$!d'
-          ${{ github.event.release.body }}
-          EOM
-          )"
+          VERSION="${{ needs.check.outputs.version }}"
+          NOTES=$(gh api repos/{owner}/{repo}/releases/tags/v$VERSION --jq '.body')
           
           echo "changelog<<EOF" >> $GITHUB_OUTPUT
-          echo "$CHANGELOG" >> $GITHUB_OUTPUT
+          echo "$NOTES" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
 
-      # Update the Unreleased section with the current release note
-      - name: Patch Changelog
-        if: ${{ steps.properties.outputs.changelog != '' }}
-        env:
-          CHANGELOG: ${{ steps.properties.outputs.changelog }}
-        run: |
-          ./gradlew patchChangelog --release-note="$CHANGELOG"
-
-      # Publish the plugin to JetBrains Marketplace
-      - name: Publish Plugin
+      - name: Publish Plugin to JetBrains Marketplace
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
           CERTIFICATE_CHAIN: ${{ secrets.CERTIFICATE_CHAIN }}
@@ -71,19 +93,33 @@ jobs:
           PRIVATE_KEY_PASSWORD: ${{ secrets.PRIVATE_KEY_PASSWORD }}
         run: ./gradlew publishPlugin
 
-      # Upload artifact as a release asset
-      - name: Upload Release Asset
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ github.event.release.tag_name }} ./build/distributions/*
-
-      # Create a pull request
-      - name: Create Pull Request
-        if: ${{ steps.properties.outputs.changelog != '' }}
+      - name: Publish GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          VERSION="${{ github.event.release.tag_name }}"
+          VERSION="${{ needs.check.outputs.version }}"
+          gh release edit v$VERSION --draft=false
+
+      - name: Upload Release Assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="${{ needs.check.outputs.version }}"
+          gh release upload v$VERSION ./build/distributions/* --clobber
+
+      - name: Patch Changelog
+        if: ${{ steps.notes.outputs.changelog != '' }}
+        env:
+          CHANGELOG: ${{ steps.notes.outputs.changelog }}
+        run: |
+          ./gradlew patchChangelog --release-note="$CHANGELOG"
+
+      - name: Create Pull Request
+        if: ${{ steps.notes.outputs.changelog != '' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION="v${{ needs.check.outputs.version }}"
           BRANCH="changelog-update-$VERSION"
           LABEL="release changelog"
 
@@ -94,13 +130,13 @@ jobs:
           git commit -am "Changelog update - $VERSION"
           git push --set-upstream origin $BRANCH
           
-          gh label create "$LABEL" \
-            --description "Pull requests with release changelog update" \
-            --force \
+          gh label create "$LABEL" \\
+            --description "Pull requests with release changelog update" \\
+            --force \\
             || true
 
-          gh pr create \
-            --title "Changelog update - \`$VERSION\`" \
-            --body "Current pull request contains patched \`CHANGELOG.md\` file for the \`$VERSION\` version." \
-            --label "$LABEL" \
+          gh pr create \\
+            --title "Changelog update - \\`$VERSION\\`" \\
+            --body "Current pull request contains patched \\`CHANGELOG.md\\` file for the \\`$VERSION\\` version." \\
+            --label "$LABEL" \\
             --head $BRANCH

@@ -11,18 +11,20 @@
      Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
      Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Black Hole Theme is a sleek and minimalist dark theme for IntelliJ IDEA, designed to reduce eye
-    strain during long coding sessions. Inspired by the depth and mystery of black holes, it
-    features a carefully curated color palette that blends dark tones with soft, contrasting
-    accents. This theme provides an immersive development experience, perfect for programmers
-    looking for a modern, professional, and user-friendly environment.
+    Black Hole Theme is a carefully crafted theme collection designed to enhance your development experience across all
+    JetBrains IDEs. Inspired by the depth and mystery of cosmic phenomena, this theme suite offers 4 distinct color
+    variants to match your coding style and environment preferences.
   ]]></description>
 
     <extensions defaultExtensionNs="com.intellij">
-        <themeProvider id="cc10d611-8006-49a5-960b-70d27a504c84" path="/theme/black_hole_light.theme.json"/>
-        <bundledColorScheme path="/theme/black_hole_light" id="Black Hole Light"/>
         <themeProvider id="5de5de8f-3896-49d6-8b4b-243a95450996" path="/theme/black_hole_dark.theme.json"/>
         <bundledColorScheme path="/theme/black_hole_dark" id="Black Hole Dark"/>
+        <themeProvider id="ab300abb-5bef-421c-a45e-4d3ce7d1948b" path="/theme/black_hole_purple.theme.json"/>
+        <bundledColorScheme path="/theme/black_hole_purple" id="Black Hole Purple"/>
+        <themeProvider id="bf1b76b9-1b55-423d-ba3c-bf932749ecfc" path="/theme/black_hole_green.theme.json"/>
+        <bundledColorScheme path="/theme/black_hole_green" id="Black Hole Green"/>
+        <themeProvider id="faf46e1f-8c18-4634-94ad-1a9d74fff38a" path="/theme/black_hole_gray.theme.json"/>
+        <bundledColorScheme path="/theme/black_hole_gray" id="Black Hole Gray"/>
     </extensions>
 
     <applicationListeners>

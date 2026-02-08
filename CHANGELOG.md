@@ -3,6 +3,21 @@
 # Black Hole Theme Changelog
 
 ## [Unreleased]
+
+## [1.4.0] - 2026-02-07
+### Added
+- Black Hole Green theme - A nature-inspired green variant with soothing tones
+- Black Hole Gray theme - A professional monochromatic grayscale theme
+- Black Hole Purple theme - A cosmic purple and violet theme
+
+### Changed
+- Updated plugin architecture to support multiple theme variants
+- Improved theme organization with individual JSON and XML files per variant
+
+### Fixed
+- Enhanced color contrast across all themes for better readability
+
+## [1.3.4] - 2025-10-06
 ### Fixed
 - Fix some color of the dark theme
 ### Changed
