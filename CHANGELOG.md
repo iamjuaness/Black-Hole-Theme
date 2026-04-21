@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.4.1] - 2026-04-21
+### Changed
+- Updated plugin version compatibility to support IntelliJ IDEA 2026.1
+
 ## [1.4.0] - 2026-02-07
 ### Added
 - Black Hole Green theme - A nature-inspired green variant with soothing tones
