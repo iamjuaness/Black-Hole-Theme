@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+## [1.4.2] - 2026-11-14
+### Changed
+- Compatible with IntelliJ Platform 2026.3 (263) and all later builds (no upper build limit)
+- Removed leftover plugin-template sample code
+- Added automated theme resource checks (palette references, contrast, scheme files)
+
 ## [1.4.1] - 2026-04-21
 ### Changed
 - Updated plugin version compatibility to support IntelliJ IDEA 2026.1

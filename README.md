@@ -115,6 +115,16 @@ cd Black-Hole-Theme
 
 ---
 
+## 🚀 Releasing (maintainers)
+
+Pushing to `main` runs build, tests, Qodana and plugin verification. If all pass and `pluginVersion` in
+`gradle.properties` has no GitHub release yet, the plugin is published to the JetBrains Marketplace and a
+`v<version>` GitHub release is created. To release: bump `pluginVersion`, add a matching section to `CHANGELOG.md`, push.
+
+Compatibility: `since-build` is `233`; there is no `until-build`, so new IDE versions need no plugin update.
+
+---
+
 ## 🤝 Contributing
 Contributions are welcome! Whether it's bug reports, feature requests, or code contributions, your input helps make 
 Black Hole Theme better for everyone.
@@ -137,13 +147,13 @@ Black Hole Theme better for everyone.
 ---
 
 ## 📊 Project Status
-[!NOTE]
-Black Hole Theme is actively maintained and continuously improved. While stable for daily use, new features and refinements are regularly added.
+> [!NOTE]
+> Black Hole Theme is actively maintained and continuously improved. While stable for daily use, new features and refinements are regularly added.
 
 ---
 
 ## 📜 License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/iamjuaness/Black-Hole-Theme/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/iamjuaness/Black-Hole-Theme/blob/main/LICENSE.md) file for details.
 
 ---
 
